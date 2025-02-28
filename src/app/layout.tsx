@@ -2,12 +2,13 @@ import { GeistSans } from "geist/font/sans"
 import type { Metadata } from "next"
 import "./globals.css"
 
+import ScrollToTop from "@/components/ScrollToTop"
 import Footer from "@/components/ui/Footer"
 import { NavBar } from "@/components/ui/Navbar"
 import { siteConfig } from "./siteConfig"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("silhouette-exercise.vercel.app"),
+  metadataBase: new URL("https://silhouette-exercise.vercel.app/"),
   title: siteConfig.name,
   description: siteConfig.description,
   keywords: ["Marketing", "Database", "Software"],
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body
         className={`${GeistSans.className} min-h-screen overflow-x-hidden scroll-auto bg-gray-50 antialiased selection:bg-gray-600 selection:text-gray-100`}
       >
+        <ScrollToTop />
         <NavBar />
         {children}
         <Footer />

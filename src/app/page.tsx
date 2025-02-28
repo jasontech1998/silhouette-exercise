@@ -1,3 +1,6 @@
+"use client"
+
+import { ScrollFadeSection } from "@/components/Fade"
 import { CallToAction } from "@/components/ui/CallToAction"
 import FeatureDivider from "@/components/ui/FeatureDivider"
 import Features from "@/components/ui/Features"
@@ -12,23 +15,32 @@ export default function Home() {
       <div className="pt-56">
         <Hero />
       </div>
-      <div className="mt-52 px-4 xl:px-0">
+
+      <ScrollFadeSection className="mt-46 px-4 xl:px-0">
         <Features />
-      </div>
-      <div className="mt-32 px-4 xl:px-0">
+      </ScrollFadeSection>
+
+      <ScrollFadeSection className="mt-32 px-4 xl:px-0" delay={0.1}>
         <Testimonial />
-      </div>
+      </ScrollFadeSection>
+
       <FeatureDivider className="my-16 max-w-6xl" />
-      <div className="px-4 xl:px-0">
+
+      <ScrollFadeSection className="px-4 xl:px-0" delay={0.1}>
         <EnvironmentMap />
-      </div>
+      </ScrollFadeSection>
+
       <FeatureDivider className="my-16 max-w-6xl" />
-      <div className="mt-12 mb-40 px-4 xl:px-0">
+
+      <ScrollFadeSection className="mt-12 mb-12 px-4 xl:px-0" delay={0.1}>
         <SilhouetteIntelligence />
-      </div>
-      <div className="mt-10 mb-40 px-4 xl:px-0">
+      </ScrollFadeSection>
+
+      <FeatureDivider className="my-16 max-w-6xl" />
+
+      <ScrollFadeSection className="mt-10 mb-40 px-4 xl:px-0" delay={0.1}>
         <CallToAction />
-      </div>
+      </ScrollFadeSection>
     </main>
   )
 }
