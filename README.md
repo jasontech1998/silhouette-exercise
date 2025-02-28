@@ -1,47 +1,29 @@
-# Tremor – Solar
+# Silhouette
 
-`Solar` is a website template from [Tremor](https://tremor.so). It's built
-using [`Tremor`](https://tremor.so/docs/getting-started/installation) and
-[Next.js](https://nextjs.org).
+Silhouette is a website built from a Tremor template. It's developed using Tremor and Next.js as an exercise for building marketing landing pages for a computing technology brand.
 
-## Getting started
+**Note that Silhouette is a fictional/concept company created for demonstration purposes.**
 
-1. Install the dependencies. We recommend using pnpm. If you want to use `npm`,
-   just replace `pnpm` with `npm`.
+## About Silhouette
 
-```bash
-pnpm install
-```
+Silhouette represents the future of ambient computing - technology that enhances spaces while fading into the background. Our fictional brand focuses on:
 
-2. Then, start the development server:
+- AI-powered environments that learn and adapt to users
+- Seamless integration between devices and spaces
+- Intuitive interfaces that respond naturally to human needs
+- Sophisticated, unobtrusive technology that complements modern living
 
-```bash
-pnpm run dev
-```
+The website has been extensively customized from the original Solar template with:
 
-3. Visit [http://localhost:3000](http://localhost:3000) in your browser to view
-   the template.
-
-## Notes
-
-This project uses
-[`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to
-automatically optimize and load Inter, a custom Google Font.
-
-This project uses
-[`Tremor`](https://raw.tremor.so/docs/getting-started/installation) components
-for the UI.
+- A custom SVG logo reflecting the Silhouette brand identity
+- Updated color scheme from orange to sophisticated black/gray tones
+- Enhanced hero section with a new ambient background animation
+- Smooth scrolling functionality between page sections
+- Subtle fade-in animations for content elements as users navigate
+- Redesigned feature sections to highlight ambient computing concepts
+- Modified UI components to match the "present but unobtrusive" brand aesthetic
 
 ## License
 
 This site template is a commercial product and is licensed under the
 [Tremor License](https://blocks.tremor.so/license).
-
-## Learn more
-
-For a deeper understanding of the technologies used in this template, check out
-the resources listed below:
-
-- [Tailwind CSS v4 beta](https://tailwindcss.com) - A utility-first CSS framework
-- [Next.js](https://nextjs.org/docs) - Next.js documentation
-- [Radix UI](https://www.radix-ui.com) - Radix UI Website
