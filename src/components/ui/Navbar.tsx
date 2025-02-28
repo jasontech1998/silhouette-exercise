@@ -6,7 +6,7 @@ import { cx } from "@/lib/utils"
 import { RiCloseFill, RiMenuFill } from "@remixicon/react"
 import Link from "next/link"
 import React from "react"
-import { SolarLogo } from "../../../public/SolarLogo"
+import { SilhouetteLogo } from "../../../public/SilhouetteLogo"
 import { Button } from "../Button"
 
 export function NavBar() {
@@ -24,20 +24,27 @@ export function NavBar() {
     >
       <div className="w-full md:my-auto">
         <div className="relative flex items-center justify-between">
-          <Link href={siteConfig.baseLinks.home} aria-label="Home">
-            <span className="sr-only">Solar Tech Logo</span>
-            <SolarLogo className="w-22" />
-          </Link>
+          <div className="container mx-auto">
+            <Link
+              href={siteConfig.baseLinks.home}
+              aria-label="Home"
+              className="flex items-center space-x-2"
+            >
+              <span className="sr-only">Silhouette Tech Logo</span>
+              <SilhouetteLogo className="w-10" />
+              <span className="text-xl font-semibold">Silhouette</span>
+            </Link>
+          </div>
           <nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
             <div className="flex items-center gap-10 font-medium">
-              <Link className="px-2 py-1 text-gray-900" href="#solutions">
-                Solutions
+              <Link className="px-2 py-1 text-gray-900" href="#products">
+                Products
               </Link>
-              <Link className="px-2 py-1 text-gray-900" href="#farm-management">
-                Farm Management
+              <Link className="px-2 py-1 text-gray-900" href="#environments">
+                Environments
               </Link>
-              <Link className="px-2 py-1 text-gray-900" href="#solar-analytics">
-                Analytics
+              <Link className="px-2 py-1 text-gray-900" href="#experience">
+                Experience
               </Link>
             </div>
           </nav>
