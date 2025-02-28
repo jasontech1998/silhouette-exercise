@@ -19,9 +19,9 @@ export const StickerCard = ({
     >
       <div>
         <div className="relative flex items-center gap-2">
-          <div className="absolute -left-4 h-5 w-[3px] rounded-r-sm bg-orange-500" />
-          <Icon className="size-5 shrink-0 text-orange-500" />
-          <h3 className="font-medium text-gray-900">{title}</h3>
+          <div className="absolute -left-4 h-5 w-[3px] rounded-r-sm bg-gray-300" />
+          <Icon className="size-5 shrink-0 text-black" />
+          <h3 className="font-medium text-black">{title}</h3>
         </div>
         <p className="mt-2 text-gray-600 sm:text-sm">{description}</p>
       </div>

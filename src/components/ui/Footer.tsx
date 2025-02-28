@@ -5,7 +5,7 @@ import {
   RiYoutubeFill,
 } from "@remixicon/react"
 import Link from "next/link"
-import { SolarLogo } from "../../../public/SolarLogo"
+import { SilhouetteLogo } from "../../../public/SilhouetteLogo"
 const CURRENT_YEAR = new Date().getFullYear()
 
 const Footer = () => {
@@ -13,13 +13,13 @@ const Footer = () => {
     solutions: {
       title: "Solutions",
       items: [
-        { label: "Crop Monitoring", href: "#" },
-        { label: "Irrigation Control", href: "#" },
-        { label: "Soil Analytics", href: "#" },
-        { label: "Weather Integration", href: "#" },
+        { label: "Ambient Sensing", href: "#" },
+        { label: "Adaptive Lighting", href: "#" },
+        { label: "Spatial Intelligence", href: "#" },
+        { label: "Environment Integration", href: "#" },
         { label: "Documentation", href: "#" },
-        { label: "Smart Farming Guide", href: "#" },
-        { label: "Equipment", href: "#" },
+        { label: "Smart Living Guide", href: "#" },
+        { label: "Hardware", href: "#" },
       ],
     },
     company: {
@@ -28,14 +28,14 @@ const Footer = () => {
         { label: "About us", href: "#" },
         { label: "Blog", href: "#" },
         { label: "Careers", href: "#" },
-        { label: "Success Stories", href: "#" },
-        { label: "Sustainability", href: "#" },
+        { label: "Case Studies", href: "#" },
+        { label: "Innovation", href: "#" },
       ],
     },
     resources: {
       title: "Resources",
       items: [
-        { label: "Farmer Network", href: "#" },
+        { label: "Developer Network", href: "#" },
         {
           label: "Community",
           href: "#",
@@ -51,14 +51,13 @@ const Footer = () => {
     partners: {
       title: "Partners",
       items: [
-        { label: "Dealer Network", href: "#", external: true },
+        { label: "Technology Ecosystem", href: "#", external: true },
         { label: "System Status", href: "#", external: true },
         { label: "Research Partners", href: "#", external: true },
         { label: "Integration Guide", href: "#" },
       ],
     },
   }
-
   return (
     <div className="px-4 xl:px-0">
       <footer
@@ -146,9 +145,9 @@ const Footer = () => {
             href="/"
             className="flex items-center font-medium text-gray-700 select-none sm:text-sm"
           >
-            <SolarLogo className="ml-2 w-20" />
+            <SilhouetteLogo className="ml-2 w-16" />
 
-            <span className="sr-only">Solar Logo (go home)</span>
+            <span className="sr-only">Silhouette Logo (go home)</span>
           </Link>
 
           <div>
@@ -188,7 +187,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="ml-2 hidden text-sm text-gray-700 lg:inline">
-              &copy; {CURRENT_YEAR} Solar Technologies, Inc.
+              &copy; {CURRENT_YEAR} Experimental Piece: By Jason Yu
             </div>
           </div>
         </div>

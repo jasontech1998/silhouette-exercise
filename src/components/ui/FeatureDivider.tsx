@@ -1,51 +1,75 @@
+"use client"
+
+import { cx } from "@/lib/utils"
+import { useEffect, useState } from "react"
 import { Divider } from "../Divider"
 
 export default function FeatureDivider({ className }: { className?: string }) {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true)
+    }, 100)
+
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
-    <Divider className={className}>
-      <div className="relative h-4 w-5">
-        <div
-          className="absolute top-0 left-0 size-1 rounded-full bg-gray-300"
-          style={{
-            animation: `wave 2s infinite ease-in-out`,
-            animationDelay: `${0 * 0.2}s`,
-          }}
-        />
-        <div
-          className="absolute top-0 left-4 size-1 rounded-full bg-gray-300"
-          style={{
-            animation: `wave 2s infinite ease-in-out`,
-            animationDelay: `${0 * 0.2}s`,
-          }}
-        />
-        <div
-          className="absolute top-1 left-2 size-1 rounded-full bg-gray-300"
-          style={{
-            animation: `wave 2s infinite ease-in-out`,
-            animationDelay: `${2 * 0.2}s`,
-          }}
-        />
-        <div
-          className="absolute top-2 left-0 size-1 rounded-full bg-gray-300"
-          style={{
-            animation: `wave 2s infinite ease-in-out`,
-            animationDelay: `${3 * 0.2}s`,
-          }}
-        />
-        <div
-          className="absolute top-2 left-4 size-1 rounded-full bg-gray-300"
-          style={{
-            animation: `wave 2s infinite ease-in-out`,
-            animationDelay: `${3 * 0.2}s`,
-          }}
-        />
-        <div
-          className="absolute top-3 left-2 size-1 rounded-full bg-gray-300"
-          style={{
-            animation: `wave 2s infinite ease-in-out`,
-            animationDelay: `${5 * 0.2}s`,
-          }}
-        />
+    <Divider className={cx("my-12", className)}>
+      <div
+        className={`relative flex items-center justify-center transition-opacity duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}
+      >
+        <div className="relative flex h-6 w-16 items-center justify-center">
+          {/* Animated pulse ring */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute size-2 rounded-full bg-gray-300" />
+            <div
+              className="absolute size-8 rounded-full border border-gray-600/40"
+              style={{ animation: "pulse-ring 3s infinite ease-out" }}
+            />
+            <div
+              className="absolute size-12 rounded-full border border-gray-600/20"
+              style={{
+                animation: "pulse-ring 3s infinite ease-out",
+                animationDelay: "0.5s",
+              }}
+            />
+          </div>
+
+          {/* Horizontal animated lines */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div
+              className="absolute -left-4 h-[1px] w-3 bg-gray-300/80"
+              style={{ animation: "width-pulse 3s infinite ease-in-out" }}
+            />
+            <div
+              className="absolute -right-4 h-[1px] w-3 bg-gray-300/80"
+              style={{
+                animation: "width-pulse 3s infinite ease-in-out",
+                animationDelay: "0.5s",
+              }}
+            />
+          </div>
+
+          {/* Vertical animated lines */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div
+              className="absolute -top-4 h-3 w-[1px] bg-gray-300/80"
+              style={{
+                animation: "height-pulse 3s infinite ease-in-out",
+                animationDelay: "0.25s",
+              }}
+            />
+            <div
+              className="absolute -bottom-4 h-3 w-[1px] bg-gray-300/80"
+              style={{
+                animation: "height-pulse 3s infinite ease-in-out",
+                animationDelay: "0.75s",
+              }}
+            />
+          </div>
+        </div>
       </div>
     </Divider>
   )

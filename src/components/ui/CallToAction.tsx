@@ -14,15 +14,18 @@ export function CallToAction() {
             Ready to get started?
           </h2>
           <p className="mt-3 mb-8 text-lg text-gray-600">
-            Begin your smart farming journey today or talk to our agronomists
-            about your specific needs.
+            Begin your ambient living journey today or talk to our design
+            specialists about your specific environment needs.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="text-md">
+            <Button
+              asChild
+              className="text-md bg-black px-6 py-3.5 font-medium tracking-wide text-white shadow-sm transition-all duration-300 ease-out hover:bg-gray-900 hover:ring-2 hover:ring-gray-400 focus:ring-2 focus:ring-gray-600 focus:outline-none"
+            >
               <Link href="#">Start now</Link>
             </Button>
             <Button asChild className="text-md" variant="secondary">
-              <Link href="#">Find nearest dealer</Link>
+              <Link href="#">Find nearest showroom</Link>
             </Button>
           </div>
         </div>
@@ -30,14 +33,14 @@ export function CallToAction() {
           <Image
             aria-hidden
             alt="Farm with vehicles"
-            src="/images/farm-footer.webp"
+            src="/images/sil-bg-2.jpg"
             height={1000}
             width={1000}
             className="absolute inset-0 -z-10 rounded-2xl blur-xl"
           />
           <Image
             alt="Farm with vehicles"
-            src="/images/farm-footer.webp"
+            src="/images/sil-bg-2.jpg"
             height={1000}
             width={1000}
             className="relative z-10 rounded-2xl"

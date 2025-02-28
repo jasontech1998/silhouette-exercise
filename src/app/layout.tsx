@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   keywords: ["Marketing", "Database", "Software"],
   authors: [
     {
-      name: "yourname",
+      name: "Jason Yu",
       url: "",
     },
   ],
-  creator: "yourname",
+  creator: "Jason Yu",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    creator: "@yourname",
+    creator: "@lockedinagain",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon-32x32.png",
   },
 }
 
@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${GeistSans.className} min-h-screen overflow-x-hidden scroll-auto bg-gray-50 antialiased selection:bg-orange-100 selection:text-orange-600`}
+        className={`${GeistSans.className} min-h-screen overflow-x-hidden scroll-auto bg-gray-50 antialiased selection:bg-gray-600 selection:text-gray-100`}
       >
         <NavBar />
         {children}
