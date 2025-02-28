@@ -7,7 +7,7 @@ import { NavBar } from "@/components/ui/Navbar"
 import { siteConfig } from "./siteConfig"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yoururl.com"),
+  metadataBase: new URL("silhouette-exercise.vercel.app"),
   title: siteConfig.name,
   description: siteConfig.description,
   keywords: ["Marketing", "Database", "Software"],
