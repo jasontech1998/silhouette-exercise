@@ -19,7 +19,7 @@ export default function Features() {
   return (
     <section
       aria-label="Silhouette Ambient Intelligence Features"
-      id="products"
+      id="solutions"
       className="relative mx-auto max-w-6xl scroll-my-24"
     >
       {/* Vertical Lines */}

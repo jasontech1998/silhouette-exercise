@@ -52,9 +52,9 @@ export function NavBar() {
             <div className="flex items-center gap-10 font-medium">
               <a
                 className="cursor-pointer px-2 py-1 text-gray-900"
-                onClick={(e) => handleNavClick(e, "products")}
+                onClick={(e) => handleNavClick(e, "solutions")}
               >
-                Products
+                Solutions
               </a>
               <a
                 className="cursor-pointer px-2 py-1 text-gray-900"
@@ -105,9 +105,9 @@ export function NavBar() {
             <li>
               <a
                 className="cursor-pointer"
-                onClick={(e) => handleNavClick(e, "products")}
+                onClick={(e) => handleNavClick(e, "solutions")}
               >
-                Products
+                Solutions
               </a>
             </li>
             <li>
