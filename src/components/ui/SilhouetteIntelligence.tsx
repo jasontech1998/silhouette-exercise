@@ -19,7 +19,7 @@ export function SilhouetteIntelligence() {
           id="silhouette-intelligence"
           className="relative scroll-my-24 text-lg font-semibold tracking-tight text-gray-500"
         >
-          Ambient Intelligence
+          Silhouette Intelligence
           <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-gray-500" />
         </h2>
         <p className="mt-2 max-w-lg text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">

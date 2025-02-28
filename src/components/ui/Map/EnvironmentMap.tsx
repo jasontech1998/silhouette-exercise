@@ -10,7 +10,7 @@ import { SVGMap } from "./SVGMap"
 export const EnvironmentMap = () => {
   return (
     <section
-      id="environment-monitoring"
+      id="environments"
       aria-labelledby="monitoring-title"
       className="relative flex w-full max-w-6xl scroll-my-24 flex-col items-center justify-center overflow-hidden rounded-2xl bg-gray-950 px-10 shadow-2xl shadow-black/50 sm:px-16 md:px-28 lg:mx-auto"
     >
@@ -86,7 +86,7 @@ export const EnvironmentMap = () => {
       </div>
 
       <div className="pt-12 text-base font-semibold tracking-tight text-gray-300 sm:pt-20 sm:text-lg">
-        Ambient Intelligence
+        Environments
       </div>
       <h2
         id="monitoring-title"

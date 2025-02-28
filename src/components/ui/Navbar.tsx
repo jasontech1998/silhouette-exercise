@@ -43,8 +43,11 @@ export function NavBar() {
               <Link className="px-2 py-1 text-gray-900" href="#environments">
                 Environments
               </Link>
-              <Link className="px-2 py-1 text-gray-900" href="#experience">
-                Experience
+              <Link
+                className="px-2 py-1 text-gray-900"
+                href="#silhouette-intelligence"
+              >
+                Silhouette Intelligence
               </Link>
             </div>
           </nav>
