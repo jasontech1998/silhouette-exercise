@@ -1,16 +1,16 @@
 import {
-  RiCarFill,
+  RiChatVoiceAiLine,
   RiCheckLine,
   RiCircleLine,
-  RiCodepenLine,
-  RiContrast2Line,
-  RiFullscreenFill,
+  RiDoorLockLine,
+  RiHomeWifiFill,
+  RiLightbulbFlashLine,
   RiLoaderFill,
-  RiNotification2Line,
-  RiPlaneFill,
-  RiTruckFill,
+  RiRemoteControl2Line,
+  RiThermometerLine,
+  RiWifiLine,
 } from "@remixicon/react"
-import { SolarMark } from "../../../public/SolarMark"
+import { SilhouetteLogo } from "../../../public/SilhouetteLogo"
 import { Icons } from "../Icons"
 import { Orbit } from "../Orbit"
 import ChipViz from "./ChipViz"
@@ -18,7 +18,7 @@ import ChipViz from "./ChipViz"
 export default function Features() {
   return (
     <section
-      aria-label="Solar Technologies Features for Farms"
+      aria-label="Silhouette Ambient Intelligence Features"
       id="solutions"
       className="relative mx-auto max-w-6xl scroll-my-24"
     >
@@ -129,17 +129,18 @@ export default function Features() {
       <div className="grid grid-cols-1 gap-12 md:grid-cols-4 md:gap-0">
         {/* Content */}
         <div className="col-span-2 my-auto px-2">
-          <h2 className="relative text-lg font-semibold tracking-tight text-orange-500">
-            Smart Farming Solutions
-            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-orange-500" />
+          <h2 className="relative text-lg font-semibold tracking-tight text-gray-500">
+            Ambient Intelligence Solutions
+            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-gray-500" />
           </h2>
           <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
-            A network of autonomous systems for complete farm monitoring
+            A network of intelligent systems for seamless environmental
+            awareness
           </p>
           <p className="mt-4 text-balance text-gray-700">
-            Deploy intelligent monitoring and automated response systems across
-            your fields, irrigation networks, and aerial operations with our
-            integrated platform.
+            Deploy intuitive sensing and adaptive response systems throughout
+            your spaces, creating environments that learn, anticipate, and
+            enhance experiences invisibly.
           </p>
         </div>
         <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
@@ -187,7 +188,7 @@ export default function Features() {
                     key="obj1"
                     className="relative flex items-center justify-center"
                   >
-                    <RiTruckFill className="z-10 size-5 text-gray-900" />
+                    <RiLightbulbFlashLine className="z-10 size-5 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
@@ -195,7 +196,7 @@ export default function Features() {
                           <RiCircleLine className="size-3 shrink-0 text-white" />
                         </div>
                         <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs whitespace-nowrap ring-1 ring-gray-200">
-                          Drivetrain Error
+                          Lighting System
                         </div>
                       </div>
                     </div>
@@ -203,7 +204,7 @@ export default function Features() {
                       style={{
                         animationDelay: "1s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-gray-500/50"
                     ></div>
                   </div>,
 
@@ -211,7 +212,7 @@ export default function Features() {
                     key="obj2"
                     className="relative flex items-center justify-center"
                   >
-                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900" />
+                    <RiChatVoiceAiLine className="z-10 size-5 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
@@ -227,7 +228,7 @@ export default function Features() {
                       style={{
                         animationDelay: "4s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-gray-500/50"
                     ></div>
                   </div>,
 
@@ -235,13 +236,13 @@ export default function Features() {
                     key="obj3"
                     className="relative flex items-center justify-center"
                   >
-                    <RiCarFill className="z-10 size-5 text-gray-900" />
+                    <RiHomeWifiFill className="z-10 size-5 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
                     <div
                       style={{
                         animationDelay: "2s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-gray-500/50"
                     ></div>
                   </div>,
                   <div
@@ -256,7 +257,7 @@ export default function Features() {
                           <RiCheckLine className="size-3 shrink-0 text-white" />
                         </div>
                         <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200">
-                          Farming
+                          Environment
                         </div>
                       </div>
                     </div>
@@ -265,20 +266,20 @@ export default function Features() {
                       style={{
                         animationDelay: "6s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-gray-500/50"
                     ></div>
                   </div>,
                   <div
                     key="obj5"
                     className="relative flex items-center justify-center"
                   >
-                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900" />
+                    <RiThermometerLine className="z-10 size-5 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
                     <div
                       style={{
                         animationDelay: "3s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-gray-500/50"
                     ></div>
                   </div>,
                 ]}
@@ -286,9 +287,9 @@ export default function Features() {
                 <div className="relative flex h-48 w-48 items-center justify-center">
                   <div className="rounded-full p-1 ring-1 ring-black/10">
                     <div className="relative z-10 flex size-20 items-center justify-center rounded-full bg-white ring-1 shadow-[inset_0px_-15px_20px_rgba(0,0,0,0.1),0_7px_10px_0_rgba(0,0,0,0.15)] ring-black/20">
-                      <SolarMark className="size-10" />
+                      <SilhouetteLogo className="size-10" />
                     </div>
-                    <div className="absolute inset-12 animate-[spin_8s_linear_infinite] rounded-full bg-linear-to-t from-transparent via-orange-400 to-transparent blur-lg" />
+                    <div className="absolute inset-12 animate-[spin_8s_linear_infinite] rounded-full bg-linear-to-t from-transparent via-gray-400 to-transparent blur-lg" />
                   </div>
                 </div>
               </Orbit>
@@ -297,18 +298,18 @@ export default function Features() {
         </div>
 
         <div className="col-span-2 my-auto px-2">
-          <h2 className="relative text-lg font-semibold tracking-tight text-orange-500">
-            Precision Agriculture
-            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-orange-500" />
+          <h2 className="relative text-lg font-semibold tracking-tight text-gray-500">
+            Intuitive Environments
+            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-gray-500" />
           </h2>
           <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
-            Turn every acre into a data-driven powerhouse
+            Transform every space into a responsive ecosystem
           </p>
           <p className="mt-4 text-balance text-gray-700">
-            Revolutionize your farming operation with edge-computing AI that
-            transforms raw field data into actionable insights in real-time.
-            Make informed decisions faster, reduce resource waste, and maximize
-            yields.
+            Revolutionize your living and working spaces with edge-computing AI
+            that transforms environmental data into ambient intelligence in
+            real-time. Experience spaces that adapt seamlessly, conserve
+            resources automatically, and maximize comfort effortlessly.
           </p>
         </div>
         <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
@@ -355,12 +356,12 @@ export default function Features() {
             <div className="pointer-events-none relative h-full select-none">
               <div className="absolute top-[192px] left-[191.8px]">
                 <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
-                  <SolarMark className="h-8 w-8" />
+                  <SilhouetteLogo className="h-8 w-8" />
                 </div>
               </div>
               <div className="absolute top-[144px] left-[48px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-gray-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
                       14°C
@@ -371,7 +372,7 @@ export default function Features() {
 
               <div className="absolute top-[48px] left-[144px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-gray-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
                       18°C
@@ -382,7 +383,7 @@ export default function Features() {
 
               <div className="absolute top-[96px] left-[240px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-gray-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
                       17°C
@@ -393,7 +394,7 @@ export default function Features() {
 
               <div className="absolute top-[240px] left-[385px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-gray-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
                       14°C
@@ -404,7 +405,7 @@ export default function Features() {
 
               <div className="absolute top-[337px] left-[336px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-gray-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
                       12°C
@@ -415,7 +416,7 @@ export default function Features() {
 
               <div className="absolute top-[288px] left-[144px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-gray-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
                       17°C
@@ -427,17 +428,17 @@ export default function Features() {
           </div>
         </div>
         <div className="col-span-2 my-auto px-2">
-          <h2 className="relative text-lg font-semibold tracking-tight text-orange-500">
-            Easy Expansion
-            <div className="absolute top-1 -left-[7px] h-5 w-[3px] rounded-r-sm bg-orange-500" />
+          <h2 className="relative text-lg font-semibold tracking-tight text-gray-500">
+            Seamless Integration
+            <div className="absolute top-1 -left-[7px] h-5 w-[3px] rounded-r-sm bg-gray-500" />
           </h2>
           <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
-            Scale your smart farm with plug-and-play simplicity
+            Expand your ambient network with zero-effort connectivity
           </p>
           <p className="mt-4 text-balance text-gray-700">
-            Add new sensors and capabilities to your farm network with zero
-            setup required. Our systems automatically connect and coordinate
-            with each other.
+            Add new devices and capabilities to your ambient environment with no
+            configuration needed. Our intelligent systems automatically
+            discover, connect, and adapt to enhance your space.
           </p>
         </div>
         <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
@@ -479,7 +480,7 @@ export default function Features() {
               <div className="absolute top-[6rem] left-[6rem] z-20">
                 <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
                   <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.09),0_3px_5px_0_rgba(0,0,0,0.19)] ring-white/50 ring-inset">
-                    <RiNotification2Line
+                    <RiHomeWifiFill
                       className="size-5 text-gray-900"
                       aria-hidden="true"
                     />
@@ -489,7 +490,7 @@ export default function Features() {
               <div className="absolute top-[6rem] right-[6rem] z-20">
                 <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
                   <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset">
-                    <RiContrast2Line
+                    <RiDoorLockLine
                       className="size-5 text-gray-900"
                       aria-hidden="true"
                     />
@@ -499,7 +500,7 @@ export default function Features() {
               <div className="absolute right-[6rem] bottom-[6rem] z-20">
                 <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
                   <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset">
-                    <RiCodepenLine
+                    <RiWifiLine
                       className="size-5 text-gray-900"
                       aria-hidden="true"
                     />
@@ -509,7 +510,7 @@ export default function Features() {
               <div className="absolute bottom-[6rem] left-[6rem] z-20">
                 <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
                   <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset">
-                    <RiFullscreenFill
+                    <RiRemoteControl2Line
                       className="size-5 text-gray-900"
                       aria-hidden="true"
                     />
@@ -527,7 +528,7 @@ export default function Features() {
                   <div className="relative">
                     <div className="h-0.5 w-60 bg-linear-to-r from-gray-300 to-transparent" />
                     <div
-                      className="absolute top-0 left-0 h-0.5 w-28 bg-linear-to-r from-transparent via-orange-300 to-transparent"
+                      className="absolute top-0 left-0 h-0.5 w-28 bg-linear-to-r from-transparent via-gray-500 to-transparent"
                       style={{
                         animation: `gridMovingLine 5s linear infinite ${index * 1.2}s`,
                         animationFillMode: "backwards",

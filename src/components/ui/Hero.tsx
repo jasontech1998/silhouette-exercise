@@ -1,6 +1,6 @@
 import { RiArrowRightUpLine } from "@remixicon/react"
 import { FadeContainer, FadeDiv, FadeSpan } from "../Fade"
-import GameOfLife from "./HeroBackground"
+import AmbientBackground from "./HeroBackground"
 
 export function Hero() {
   return (
@@ -14,7 +14,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="mx-auto w-full"
           >
-            <div className="inline-flex max-w-full items-center gap-3 rounded-full bg-white/5 px-2.5 py-0.5 pr-3 pl-0.5 font-medium text-gray-900 ring-1 shadow-lg shadow-orange-400/20 ring-black/10 filter backdrop-blur-[1px] transition-colors hover:bg-orange-500/[2.5%] focus:outline-hidden sm:text-sm">
+            <div className="inline-flex max-w-full items-center gap-3 rounded-full bg-white/5 px-2.5 py-0.5 pr-3 pl-0.5 font-medium text-gray-900 ring-1 shadow-lg shadow-gray-400/20 ring-black/10 filter backdrop-blur-[1px] transition-colors hover:bg-gray-500/[2.5%] focus:outline-hidden sm:text-sm">
               <span className="shrink-0 truncate rounded-full border bg-gray-50 px-2.5 py-1 text-sm text-gray-600 sm:text-xs">
                 News
               </span>
@@ -22,7 +22,6 @@ export function Hero() {
                 <span className="w-full truncate">
                   Atmosphere OS 2.0 Launch
                 </span>
-
                 <RiArrowRightUpLine className="size-4 shrink-0 text-gray-700" />
               </span>
             </div>
@@ -41,14 +40,14 @@ export function Hero() {
         </p>
         <FadeDiv>
           <a
-            className="mt-6 inline-flex cursor-pointer flex-row items-center justify-center gap-1 rounded-md border-b-[1.5px] border-gray-800 bg-black px-5 py-3 leading-4 font-medium tracking-wide whitespace-nowrap text-white shadow-[0_0_0_2px_rgba(0,0,0,0.04),0_0_14px_0_rgba(255,255,255,0.10)] transition-all duration-200 ease-in-out hover:shadow-gray-600"
+            className="mt-6 inline-flex cursor-pointer items-center justify-center rounded-md bg-black px-6 py-3.5 font-medium tracking-wide text-white shadow-sm transition-all duration-300 ease-out hover:bg-gray-900 hover:ring-2 hover:ring-gray-400 focus:ring-2 focus:ring-gray-600 focus:outline-none"
             href="#"
           >
             Experience now
           </a>
         </FadeDiv>
         <div className="absolute inset-0 -z-10 flex items-center justify-center">
-          <GameOfLife />
+          <AmbientBackground />
         </div>
       </FadeContainer>
     </section>
