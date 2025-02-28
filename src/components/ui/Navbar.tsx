@@ -14,10 +14,8 @@ export function NavBar() {
   const [open, setOpen] = React.useState(false)
   const scrolled = useScroll(15)
 
-  // Use the custom smooth scroll hook with 80px offset for the header
   const scrollToSection = useSmoothScroll(80)
 
-  // Wrapper function to also close the mobile menu
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     sectionId: string,
