@@ -2,6 +2,7 @@
 
 import { siteConfig } from "@/app/siteConfig"
 import useScroll from "@/lib/useScroll"
+import useSmoothScroll from "@/lib/useSmoothScroll"
 import { cx } from "@/lib/utils"
 import { RiCloseFill, RiMenuFill } from "@remixicon/react"
 import Link from "next/link"
@@ -12,6 +13,18 @@ import { Button } from "../Button"
 export function NavBar() {
   const [open, setOpen] = React.useState(false)
   const scrolled = useScroll(15)
+
+  // Use the custom smooth scroll hook with 80px offset for the header
+  const scrollToSection = useSmoothScroll(80)
+
+  // Wrapper function to also close the mobile menu
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: string,
+  ): void => {
+    setOpen(false)
+    scrollToSection(e, sectionId)
+  }
 
   return (
     <header
@@ -37,18 +50,24 @@ export function NavBar() {
           </div>
           <nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
             <div className="flex items-center gap-10 font-medium">
-              <Link className="px-2 py-1 text-gray-900" href="#products">
+              <a
+                className="cursor-pointer px-2 py-1 text-gray-900"
+                onClick={(e) => handleNavClick(e, "products")}
+              >
                 Products
-              </Link>
-              <Link className="px-2 py-1 text-gray-900" href="#environments">
+              </a>
+              <a
+                className="cursor-pointer px-2 py-1 text-gray-900"
+                onClick={(e) => handleNavClick(e, "environments")}
+              >
                 Environments
-              </Link>
-              <Link
-                className="px-2 py-1 text-gray-900"
-                href="#silhouette-intelligence"
+              </a>
+              <a
+                className="cursor-pointer px-2 py-1 text-gray-900"
+                onClick={(e) => handleNavClick(e, "silhouette-intelligence")}
               >
                 Silhouette Intelligence
-              </Link>
+              </a>
             </div>
           </nav>
           <Button
@@ -83,14 +102,29 @@ export function NavBar() {
           )}
         >
           <ul className="space-y-4 font-medium">
-            <li onClick={() => setOpen(false)}>
-              <Link href="#">Products</Link>
+            <li>
+              <a
+                className="cursor-pointer"
+                onClick={(e) => handleNavClick(e, "products")}
+              >
+                Products
+              </a>
             </li>
-            <li onClick={() => setOpen(false)}>
-              <Link href="#">Environments</Link>
+            <li>
+              <a
+                className="cursor-pointer"
+                onClick={(e) => handleNavClick(e, "environments")}
+              >
+                Environments
+              </a>
             </li>
-            <li onClick={() => setOpen(false)}>
-              <Link href="#">Experience</Link>
+            <li>
+              <a
+                className="cursor-pointer"
+                onClick={(e) => handleNavClick(e, "silhouette-intelligence")}
+              >
+                Silhouette Intelligence
+              </a>
             </li>
           </ul>
           <Button variant="secondary" className="text-lg">
