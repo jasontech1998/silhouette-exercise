@@ -10,7 +10,7 @@ export default function NotFound() {
       <Link href={siteConfig.baseLinks.home}>
         <SilhouetteLogo className="mt-6 h-10" />
       </Link>
-      <p className="mt-6 text-4xl font-semibold text-amber-600 sm:text-5xl">
+      <p className="mt-6 text-4xl font-semibold text-black sm:text-5xl">
         Error 404
       </p>
       <h1 className="mt-4 text-2xl font-semibold text-gray-900">
